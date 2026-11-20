@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kphvac — Проектирование систем ОВиК</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .bg-navy { background-color: #0f172a; }
+        .text-navy { color: #0f172a; }
+        .bg-orange { background-color: #f97316; }
+        .text-orange { color: #f97316; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased">
+
+    <!-- Header -->
+    <header class="bg-navy text-white py-6">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tight">kp<span class="text-orange">hvac</span></div>
+            <nav class="hidden md:flex space-x-8 font-semibold">
+                <a href="#services" class="hover:text-orange transition">Услуги</a>
+                <a href="#portfolio" class="hover:text-orange transition">Портфолио</a>
+                <a href="#contact" class="hover:text-orange transition">Контакты</a>
+            </nav>
+            <a href="#contact" class="hidden md:block bg-orange hover:bg-orange-600 px-6 py-2 rounded font-bold transition">Заказать проект</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-navy text-white py-20 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">Проектирование ОВиК <br>в <span class="text-orange">Autodesk Revit</span></h1>
+            <p class="text-xl md:text-2xl text-slate-300 mb-10 max-w-3xl mx-auto">Точные инженерные расчеты, детальная трассировка и спецификации. Разрабатываем рабочую документацию (РД) для жилых и коммерческих объектов.</p>
+            <a href="#portfolio" class="bg-orange hover:bg-orange-600 text-white text-lg font-bold px-8 py-4 rounded transition inline-block">Смотреть работы</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-center mb-16 text-navy">Наши компетенции</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="p-8 border border-slate-200 rounded shadow-sm hover:shadow-md transition">
+                    <div class="text-orange text-4xl mb-4">⚙️</div>
+                    <h3 class="text-2xl font-bold mb-3">Вентиляция</h3>
+                    <p class="text-slate-600 leading-relaxed">Расчет воздухообмена, подбор ПВУ (Turkov, Breezart, Zenit), трассировка воздуховодов и шумоглушителей. Расчет аэродинамики.</p>
+                </div>
+                <div class="p-8 border border-slate-200 rounded shadow-sm hover:shadow-md transition">
+                    <div class="text-orange text-4xl mb-4">❄️</div>
+                    <h3 class="text-2xl font-bold mb-3">Кондиционирование</h3>
+                    <p class="text-slate-600 leading-relaxed">Мульти-сплит и VRV/VRF системы. Обвязка канальных фанкойлов (Haier, MDV, Mitsubishi), расчет дренажа и фреонопроводов.</p>
+                </div>
+                <div class="p-8 border border-slate-200 rounded shadow-sm hover:shadow-md transition">
+                    <div class="text-orange text-4xl mb-4">📐</div>
+                    <h3 class="text-2xl font-bold mb-3">BIM-моделирование</h3>
+                    <p class="text-slate-600 leading-relaxed">Трехмерное проектирование в Revit. Точные спецификации ГОСТ, отсутствие коллизий со смежными сетями, изометрия узлов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-extrabold text-center mb-16 text-navy">Выполненные проекты</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <a href="г-Москва ул- Корабельная ОВ 09-11.pdf" target="_blank" class="block bg-white border border-slate-200 rounded overflow-hidden shadow-sm group hover:shadow-lg transition">
+                    <div class="h-64 bg-slate-200 relative overflow-hidden flex items-center justify-center">
+                        <span class="text-slate-400 font-semibold absolute z-0">Фото/Рендер 1</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-navy group-hover:text-orange transition">ЖК «Корабельный» (Москва)</h3>
+                        <p class="text-slate-600 text-sm mb-4">Квартира 90 м²</p>
+                        <p class="text-slate-700">Рабочая документация ОВ. Приточно-вытяжная вентиляция на базе ПВУ Turkov Capsule 590E. Канальное кондиционирование мульти-сплит Haier.</p>
+                    </div>
+                </a>
+                <a href="г-Москва ЖК- Republic ОВ 12-11.pdf" target="_blank" class="block bg-white border border-slate-200 rounded overflow-hidden shadow-sm group hover:shadow-lg transition">
+                    <div class="h-64 bg-slate-200 relative overflow-hidden flex items-center justify-center">
+                        <span class="text-slate-400 font-semibold absolute z-0">Фото/Рендер 2</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-navy group-hover:text-orange transition">ЖК «Republic» (Москва)</h3>
+                        <p class="text-slate-600 text-sm mb-4">Апартаменты 115 м²</p>
+                        <p class="text-slate-700">Проект вентиляции и кондиционирования. Интеграция скрытых щелевых решеток РЭД-ЛУК, канальные фанкойлы MDV.</p>
+                    </div>
+                </a>
+                <a href="г-Москва-Ангелово ОВ 20-10.pdf" target="_blank" class="block bg-white border border-slate-200 rounded overflow-hidden shadow-sm group hover:shadow-lg transition">
+                    <div class="h-64 bg-slate-200 relative overflow-hidden flex items-center justify-center">
+                        <span class="text-slate-400 font-semibold absolute z-0">Фото/Рендер 3</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-navy group-hover:text-orange transition">Частный дом (Ангелово)</h3>
+                        <p class="text-slate-600 text-sm mb-4">Индивидуальное жилое строение</p>
+                        <p class="text-slate-700">Система вентиляции на базе ПВУ Zenit Heco X 560. Разводка гибкими полужесткими воздуховодами через распределительные коллекторы.</p>
+                    </div>
+                </a>
+                <a href="г-Москва ЖК- Роттердам ОВ 13-10.pdf" target="_blank" class="block bg-white border border-slate-200 rounded overflow-hidden shadow-sm group hover:shadow-lg transition">
+                    <div class="h-64 bg-slate-200 relative overflow-hidden flex items-center justify-center">
+                        <span class="text-slate-400 font-semibold absolute z-0">Фото/Рендер 4</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-navy group-hover:text-orange transition">ЖК «Роттердам» (Москва)</h3>
+                        <p class="text-slate-600 text-sm mb-4">Квартира</p>
+                        <p class="text-slate-700">Решения ОВиК. ПВУ Turkov Capsule 590E, канальное кондиционирование Mitsubishi Heavy, щелевые решетки.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-navy text-white text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-4xl font-extrabold mb-8">Готовы обсудить проект?</h2>
+            <p class="text-xl text-slate-300 mb-10">Свяжитесь со мной для расчета стоимости и сроков выполнения рабочей документации.</p>
+            <div class="inline-block bg-slate-800 border border-slate-700 rounded-lg p-8">
+                <p class="text-slate-400 mb-2 uppercase tracking-widest text-sm font-bold">Телефон / Мессенджеры</p>
+                <a href="tel:+79172882861" class="text-4xl font-extrabold text-orange hover:text-white transition">+7 (917) 288-28-61</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-500 py-8 text-center border-t border-slate-800 text-sm">
+        <div class="max-w-6xl mx-auto px-4">
+            &copy; 2026 kphvac. Проектирование инженерных систем.
+        </div>
+    </footer>
+</body>
+</html>
